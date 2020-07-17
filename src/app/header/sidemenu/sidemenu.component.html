@@ -1,0 +1,98 @@
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <!-- <a href="javascript:void(0)" class="closebtn" (click)="navbaropen()">&times;</a> -->
+<!-- <div id="mySidenav" class="" [ngClass]="{sidenav: opennavbar}"> -->
+  
+        <div class="sidebar-content" id="accordion">
+          <div class="sidebar-dropdown" id="dropdown1">
+            <button class="dropdown-btn collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
+              aria-controls="collapse1"> Élan Unstitched</button>
+            <ul class="dropdown-container collapse " id="collapse1" aria-labelledby="dropdown1" data-parent="#accordion">
+              <li><a routerLink="/collections" class="nav-link">Lawn</a></li>
+              <li><a routerLink="/collections" class="nav-link">Villette</a></li>
+              <li><a routerLink="/collections" class="nav-link">Tresor</a></li>
+              <li><a href="#" class="nav-link">Tissue De Luxe</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-dropdown" id="dropdown2">
+            <button class="dropdown-btn collapsed " type="button" data-target="#collapse2" data-toggle="collapse"
+              aria-expanded="false" aria-controls="collapse2"> Élan Vital</button>
+            <ul class="dropdown-container collapse" id="collapse2" aria-labelledby="dropdown2" data-parent="#accordion">
+              <li><a href="#" class="nav-link">Vital</a></li>
+              <li><a href="#" class="nav-link">Indigene</a></li>
+              <li><a href="#" class="nav-link">Essentials</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-dropdown" id="dropdown3">
+            <button class="dropdown-btn collapsed " type="button" data-target="#collapse3" data-toggle="collapse"
+              aria-expanded="false" aria-controls="collapse3">Prêt-à-Porter</button>
+            <ul class="dropdown-container collapse" id="collapse3" aria-labelledby="dropdown3" data-parent="#accordion">
+              <li><a href="#" class="nav-link">Le Grand Amour</a></li>
+              <li><a href="#" class="nav-link">Claire De Lune</a></li>
+            </ul>
+          </div>
+  
+          <div class="sidebar-dropdown" id="dropdown4">
+            <button class="dropdown-btn collapsed " type="button" data-target="#collapse4" data-toggle="collapse"
+              aria-expanded="false" aria-controls="collapse4"> Wedding &amp; Luxury Couture</button>
+            <ul class="dropdown-container collapse" id="collapse4" aria-labelledby="dropdown4" data-parent="#accordion">
+              <li><a href="#" class="nav-link">Rêve d'été</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-dropdown" id="dropdown5">
+            <button class="dropdown-btn collapsed " type="button" data-target="#collapse5" data-toggle="collapse"
+              aria-expanded="false" aria-controls="collapse5"> Studio</button>
+            <ul class="dropdown-container collapse" id="collapse5" aria-labelledby="dropdown5" data-parent="#accordion">
+              <li><a href="#" class="nav-link">bridal</a></li>
+              <li><a href="#" class="nav-link">Contemporary</a></li>
+            </ul>
+          </div>
+  
+          <div class="sidebar-dropdown" id="dropdown6">
+            <button class="dropdown-btn collapsed " type="button" data-target="#collapse6" data-toggle="collapse"
+              aria-expanded="false" aria-controls="collapse6">Campaigns </button>
+            <ul class="dropdown-container collapse" id="collapse6" aria-labelledby="dropdown6" data-parent="#accordion">
+              <li><a href="#" class="nav-link">bridal</a></li>
+              <li><a href="#" class="nav-link">Contemporary</a></li>
+              <li><a href="#" class="nav-link">Élan Vital </a></li>
+              <li><a href="#" class="nav-link">Prêt-à-Porter</a></li>
+              <li><a href="#" class="nav-link">runway</a></li>
+            </ul>
+          </div>
+  
+          <div class="sidebar-dropdown" id="dropdown7">
+            <button class="dropdown-btn collapsed " type="button" data-target="#collapse7" data-toggle="collapse"
+              aria-expanded="false" aria-controls="collapse7">lookbooks </button>
+            <ul class="dropdown-container collapse" id="collapse7" aria-labelledby="dropdown7" data-parent="#accordion">
+              <li><a href="#" class="nav-link"> Èlan Lawn SS20</a></li>
+              <li><a href="#" class="nav-link"> Èlan Winter 19</a></li>
+              <li><a href="#" class="nav-link">Élan Vital </a></li>
+              <li><a href="#" class="nav-link">Prêt-à-Porter</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-dropdown">
+            <button class="dropdown-btn contact-us " type="button">contact Us</button>
+          </div>
+          <div class="sidebar-dropdown">
+            <button class="dropdown-btn subscribe " type="button">subscribe </button>
+          </div>
+        </div>
+  
+        <div class="sidebar-bottom">
+  
+          <div class="header-search">
+  
+            <form id="sidebar-search" >
+              <a href="#" (click)="showsearch()">
+                <svg id="search" viewBox="0 0 20 20" class="icon icon-glass" height="100%">
+                  <path
+                    d="M18.4 17.6l-3.7-3.7c1.2-1.3 1.9-3 1.9-4.9 0-4.1-3.4-7.5-7.5-7.5S1.5 4.9 1.5 9s3.4 7.5 7.5 7.5c1.9 0 3.6-.7 4.9-1.9l3.7 3.7c.1.1.2.1.4.1s.3 0 .4-.1c.1-.1.1-.5 0-.7zM2.5 9c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5-2.9 6.5-6.5 6.5S2.5 12.6 2.5 9z">
+                  </path>
+                </svg>
+              </a>
+              <input type="search" class="search-input" [ngClass]="{show: shouldShow}" autofocus>
+            </form>
+          </div>
+          <a href="#" class="account-link">Login</a>
+        </div>
+      </div>

@@ -1,0 +1,92 @@
+<div class="pagecontent">
+    <div class="collection-banner">
+        <a href="#"><img src="../../assets/images/collection-banner.webp"></a>
+    </div>
+    <label class="currency-picker__wrapper">
+        <select class="currency-picker" name="currencies">
+            <option value="PKR" selected="selected">PKR</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="USD">USD</option>
+        </select>
+    </label>
+    <div class="tag-select">
+        <!-- <button class="sortby " (click)="toggle()" type="button" id="dropdownMenu2"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="icon">&#709;</span>
+           </button> -->
+        <select class="select">
+            <option class="sortby" value="hide" selected="selected"> SORT BY</option>
+            <option class="sortby" disabled> Size</option>
+            <option *ngFor="let size of sizes" value=" {{ size.name }}"> {{ size.name }} </option>
+            <!-- <select class="dropdown-item size" type="button">size -->
+        </select>
+        <!-- </select> -->
+
+
+
+
+
+    </div>
+
+
+    <div class="page-width">
+        <div class="grid-unstiched">
+            <div class="row text-center gridrow">
+                <div class="col-md-3 col-lg-3 col-sm-3 img-container-wrapper ">
+                    <div class="img-container">
+                        <a routerLink="/product-name"><img src="../../assets/images/c-img-1.jpg"></a>
+                        <div class="img-title">EL-15 B (JOHARI) <span>Rs. 8,750 </span></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3  img-container-wrapper">
+                    <div class="img-container">
+                        <a routerLink="/product-name"><img src="../../assets/images/c-img-2.jpg"></a>
+                        <div class="img-title">EL-15 B (JOHARI) <span>Rs. 8,750 </span>
+                            <br><span class="product-price__sold-out">Out of Stock, Click for options</span></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3 img-container-wrapper">
+                    <div class="img-container">
+                        <a routerLink="/product-name"><img src="../../assets/images/c-img-3.jpg"></a>
+                        <div class="img-title">EL-15 B (JOHARI) <span>Rs. 8,750 </span></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3  img-container-wrapper">
+                    <div class="img-container">
+                        <a routerLink="/product-name"><img src="../../assets/images/c-img-4.jpg"></a>
+                        <div class="img-title">EL-15 B (JOHARI) <span>Rs. 8,750 </span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center gridrow">
+                <div class="col-md-3 col-lg-3 col-sm-3 img-container-wrapper ">
+                    <div class="img-container">
+                        <a routerLink="/product-name"><img src="../../assets/images/c-img-1.jpg"></a>
+                        <div class="img-title">EL-15 B (JOHARI) <span>Rs. 8,750 </span></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3  img-container-wrapper">
+                    <div class="img-container">
+                        <a routerLink="/product-name"><img src="../../assets/images/c-img-2.jpg"></a>
+                        <div class="img-title">EL-15 B (JOHARI) <span>Rs. 8,750 </span>
+                            <br><span class="product-price__sold-out">Out of Stock, Click for options</span></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3 img-container-wrapper">
+                    <div class="img-container">
+                        <a routerLink="/product-name"><img src="../../assets/images/c-img-3.jpg"></a>
+                        <div class="img-title">EL-15 B (JOHARI) <span>Rs. 8,750 </span></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3  img-container-wrapper">
+                    <div class="img-container">
+                        <a routerLink="/product-name"><img src="../../assets/images/c-img-4.jpg"></a>
+                        <div class="img-title">EL-15 B (JOHARI) <span>Rs. 8,750 </span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

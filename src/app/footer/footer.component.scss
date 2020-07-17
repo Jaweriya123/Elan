@@ -1,0 +1,81 @@
+.home-content{
+    display: block;
+}
+footer{
+    margin: 55px 0 0px;
+    font-size: 14px;
+    color: #000;
+    border-top: 1px solid #e8e9eb;
+.top-footer{
+    padding: 0 55px;
+    display: flex;
+    .top-footer-left{
+        text-align: left;
+        margin: 20px 0 0;
+      padding-right: 30px;
+    width: 50%;
+        p{ 
+             max-width: 400px;
+            font-size: 14px;
+            color: #000;
+        }
+        form{
+            border-bottom: 1px solid #e8e9eb;
+            max-width: 400px;
+        }
+        .searchbox{
+            border: none;
+            border-radius: 0px;
+            height: 46px;
+            font-size: 14px;
+            padding-left: 0px;
+            width: 94%;
+            position: relative;
+        }
+        .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            fill: currentColor;
+            position: absolute;
+            margin: 17px 0 0 0;
+                padding: 2px;
+        }
+    }
+    .top-footer-right{
+        text-align: right;
+        width: 50%;
+        padding-left: 30px;
+        .contact-info{
+            font-size: 14px;
+            margin-top: 20px;
+            text-align: right;
+        }
+    }
+}
+.bottom-footer{
+    font-size: 14px;
+    background-color: #eee;
+    margin-top: 30px;
+    padding: 10px 55px;
+    P{
+        margin: 0;
+        a{
+         color: #000;
+         margin-right: 10px;
+          text-decoration: none;
+         font-family: "gillsans", sans-serif;
+        }
+    }
+    .pull-right {
+        float: right;
+    }
+}
+
+}
+@media screen and (max-width:728px){
+    .bottom-footer{
+        height: 57px;
+    }
+}

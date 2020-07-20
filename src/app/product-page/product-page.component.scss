@@ -5,11 +5,14 @@
 .zoom {
     display:inline-block ;
     position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 .zoom img {
     display: block ;
-    width: 570px;
+    max-width: 100%;
 }
 
 // .img-hover-zoom {
@@ -155,6 +158,7 @@ border: 1px solid #e8e9eb;
     }
 
 }
+
 @media only screen and (max-width: 600px){
  .desktoponly{
      display: none;

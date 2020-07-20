@@ -15,18 +15,30 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  <span class="icon">&#709;</span>
            </button> -->
-        <select class="select">
+        <!-- <select class="select">
             <option class="sortby" value="hide" selected="selected"> SORT BY</option>
             <option class="sortby" disabled> Size</option>
             <option *ngFor="let size of sizes" value=" {{ size.name }}"> {{ size.name }} </option>
-            <!-- <select class="dropdown-item size" type="button">size -->
-        </select>
+           
+        </select>  -->
+
+        <!-- <select class="dropdown-item size" type="button">size -->
         <!-- </select> -->
 
+        <div class="dropbtn sortby">
+            <button type="button" (click)="openlevel()" [(ngModel)]="selectedCompany" (ngModelChange)="onSelectedCompany($event)">sort by &#709;</button>
+        </div>
+        <ul class="dropdown show dropdown-level0 select" (click)="openleveltwo()" [ngClass]="{showone: openlevel1}">
+            <li class=" size" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                size
+        </li>
 
+            <ul [ngClass]="{showtwo: openlevel2}" class="dropdown-menu collapse size-dropdown" aria-labelledby="dropdownMenuLink">
+                <li *ngFor="let size of sizes"> {{ size.name }} </li>
 
-
-
+            </ul>
+        </ul>
     </div>
 
 

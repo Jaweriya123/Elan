@@ -12,6 +12,10 @@ export class ColectionUnstichedComponent implements OnInit {
   ngOnInit(): void {
   }
   showdrop=false;
+  openlevel1=true;
+  openlevel2=true;
+  company: string = null;
+  selectedCompany: string = null;
   sizes=[{
     'name':'X'
   },{
@@ -20,9 +24,24 @@ export class ColectionUnstichedComponent implements OnInit {
   {
     'name':'L'
   },
+  {
+    'name':'S'
+  },
+  {
+    'name':'M'
+  },
 ]
 
 toggle(){
   this.showdrop = !this.showdrop; 
+}
+openlevel(){
+  this.openlevel1 = !this.openlevel1;
+}
+openleveltwo(){
+  this.openlevel2 = !this.openlevel2;
+}
+onSelectedCompany(company: string) {  
+  this.company = company;
 }
 }

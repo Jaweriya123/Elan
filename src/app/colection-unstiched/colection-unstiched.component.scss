@@ -1,3 +1,9 @@
+.showone{
+    display: none;
+}
+.showtwo{
+    display: none;
+}
 .collection-banner{
   img{
       width: 100%;
@@ -22,46 +28,57 @@
     padding: 0 55px;
     text-align: right;
     height: 63px;
-   .active{
-       display:block;
-   }
-   .select{
-       border:none;
-       border: none;
-       width:auto;
-       outline: none;
-       transition: all 0.3s ease-in;
-       option{
+    position: relative;
+    outline: none;
+    button{
+        background: no-repeat;
         border: none;
-        outline: none;
-        display: block;
-        padding: 4px 5px;
-        font-size: 14px;
+        text-transform: uppercase;
+        padding: 5px;
         cursor: pointer;
-        transition: all 0.3s ease-out;
-       }
-   }
-   .sortby{
-    color: #000;
-    font-size: 15px;
-    text-transform: uppercase;
-    background: transparent;
-    border: none;
-    .icon{
-       font-size: 12px;
-       font-weight: bold;
-       
+        outline: none;
     }
+    .dropdown-level0{
+    padding: 4px 5px;
+    font-size: 14px;
+    cursor: pointer;
     .size{
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        transition: all 0.3 ;
+        padding: 0 9px;
+        opacity: 0.9;
+        text-align: left;
+        border: 1px solid #ddd;
+        top: 2px;
+        right: -6px;
+        min-width: 88px;
+        padding-top: 5px;
+        z-index: 99;
+        color: black;
+        position: absolute;
+        text-transform: uppercase;
+        background-color: rgba(255,255,255,0.95);
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        outline: none;
+        text-decoration: none;
+        list-style: none;
+    
+    }
+    .size-dropdown{
+        min-width: 5.5rem !important;
+        margin: 0;
+        top: -4px !important;
+        border: none;
+    li{
+        padding: 3px 9px;
+        margin: 0;
+    }
+    }
     }
    }
 
-}
+
 .page-width{
-    padding: 0 55px;
+    padding: 0px 55px;
 }
 .grid-unstiched{
     .gridrow{

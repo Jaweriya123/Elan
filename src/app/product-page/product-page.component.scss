@@ -2,37 +2,35 @@
 .page-width{
     padding: 55px 55px;
 }
-#expandedImg{
-  width: 100%;
-  height: 100%;
+.zoom {
+    display:inline-block ;
+    position: relative;
 }
-.img-hover-zoom {
-  
-    overflow: hidden; 
-  }
-  
-  .img-hover-zoom img {
-    transition: transform .5s ease;
-    overflow: hidden;
-  }
 
-  .img-hover-zoom:hover img {
-    transform: scale(1.5);
-    overflow: hidden;
-  }
+.zoom img {
+    display: block ;
+    width: 570px;
+}
+
+// .img-hover-zoom {
+  
+//     overflow: hidden; 
+//   }
+  
+//   .img-hover-zoom img {
+//     transition: transform .5s ease;
+//     overflow: hidden;
+//   }
+
+//   .img-hover-zoom:hover img {
+//     transform: scale(1.5);
+//     overflow: hidden;
+//   }
 // .img-hover-zoom{
 //     overflow: hidden; 
   
 // }
-//   .image {
-//     width: 100%;
-//     background-size: 100%;
-//  background-position: center;
-//  background-repeat: no-repeat;
-//  &:hover {
-//     transform: scale(1.5);
-//    }
-//    }
+
 .grid-container{
     padding: 0;
     display: flex;

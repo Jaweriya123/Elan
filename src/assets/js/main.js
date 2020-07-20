@@ -29,7 +29,7 @@ $(document).ready(function () {
         loop: true,
         responsiveClass: true,
         nav: false,
-        dots: false,
+        dots: true,
         autoplay: true,
         responsive: {
             0: {
@@ -81,7 +81,6 @@ $(document).ready(function () {
         }
 
     });
-
 });
 
 
@@ -108,14 +107,29 @@ function myFunction(imgs) {
                 }
                 this.classList.add('active')
 
-                document.getElementById('expandedImg').src = this.src
+                document.getElementById('expandedImg').src = this.src;
+                
     })
 }
 
 }
-const el = document.querySelector("#module");
 
-el.addEventListener("mousemove", (e) => {
-  el.style.setProperty('--x', -e.offsetX + "px");
-  el.style.setProperty('--y', -e.offsetY + "px");
-});
+
+// let image = document.querySelector('.image');
+// image.style.backgroundImage = "url('" + img.src + "')";
+// image.addEventListener('mousemove', function (e) {
+  
+//  let width = image.offsetWidth;
+//  let height = image.offsetHeight;
+//  let mouseX = e.offsetX;
+//  let mouseY = e.offsetY;
+// console.log(mouseX + "" + mouseY)
+//  let bgPosX = (mouseX / width * 100);
+//  let bgPosY = (mouseY / height * 100);
+
+//  image.style.setPosition = `${bgPosX}% ${bgPosY}%`;
+// });
+
+// image.addEventListener('mouseleave', function () {
+//  image.style.backgroundPosition = "center";
+// });

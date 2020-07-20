@@ -78,4 +78,10 @@ footer{
     .bottom-footer{
         height: 57px;
     }
+   
+}
+@media screen and (max-width:600px){
+    .desktop-footer{
+        display: none;
+    }
 }

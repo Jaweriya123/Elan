@@ -110,6 +110,7 @@ function myFunction(imgs) {
                 this.classList.add('active')
 
                 document.getElementById('expandedImg').src = this.src;
+                document.getElementsByClassName('.zoomImg').src = this.src;
                 
     })
 }

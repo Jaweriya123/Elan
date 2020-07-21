@@ -15,7 +15,6 @@
 		onZoomOut: false,
 		magnify: 1
 	};
-
 	// Core Zoom Logic, independent of event listeners.
 	$.zoom = function(target, source, img, magnify) {
 		var targetHeight,

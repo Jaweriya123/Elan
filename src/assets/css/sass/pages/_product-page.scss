@@ -1,0 +1,193 @@
+
+.page-width{
+    padding: 55px 55px;
+}
+.zoom {
+    display:inline-block ;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.zoom img {
+    display: block ;
+    max-width: 100%;
+}
+
+.grid-container{
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    .left-gellery{
+     width: 150px;
+     padding: 0;
+     margin-top: 30px;
+     padding-left: 13px;
+     display: flex;
+     flex-direction: column;
+        img{
+            width: 116px;
+            max-width: 100%;
+            display: block;
+            margin-bottom: 10px;
+            opacity: 0.5;
+            &.active{
+                opacity:1;
+            }
+        }
+    }
+
+    .middle-gellery {
+        padding: 0;
+        max-width: 570px;
+        padding-left: 13px;
+       
+    }
+    .gellery-right{
+        
+    padding-left: 30px;
+    width: 30%;
+        .form-flex{
+            display: flex;
+        }
+        font-family: "gillsans", sans-serif !important;
+        h1{
+            font-family: "gillsans", sans-serif !important;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 400;
+            font-size:22px;
+            margin-bottom:0 
+        }
+        .price{
+            font-size: 19px;
+            margin-top: 15px;
+            font-weight: 200;
+            color: #000;
+            margin-top: 0
+        }
+        .type-container{
+            padding: 0 5px;
+        .type{
+            text-transform: uppercase;
+        }
+        select {
+            cursor: pointer;
+            padding: 13px 18px;
+            border: 1px solid #e8e9eb;
+            background-color: #fff;
+            color: #000;
+            max-width: 100%;
+            margin-bottom: 21px;
+    }
+}
+.form-item-quantity{
+    padding: 0 5px;
+    .type{
+        text-transform: uppercase;
+    }
+    .quantity{
+        padding: 11px 18px;
+        border: 1px solid #e8e9eb;
+        
+    margin-bottom: 14px;
+        
+    }
+}
+    }
+.addtocart{
+    background: #000;
+    text-transform: uppercase;
+    min-width: 239px;
+    color: #fff;
+    letter-spacing: 0.08em;
+    border: none;
+    padding: 10px;
+    margin: 0 5px 32px 5px;
+}
+.details{
+    background: none;
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+    outline: none;
+    margin-bottom: 8px;
+ font-size: 15px;
+ }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    th, td {
+        padding: 8px 6px;
+        text-align: left;
+border: 1px solid #e8e9eb;
+    }
+}
+}
+.mobile-only{
+    display: block;
+    padding: 18px 22px;
+    .product-title-mob{
+        margin-top: 12px;
+        padding: 19px 4px;
+        position: relative;
+       
+        p{ 
+            display: inline;
+            margin: 0;
+        }
+        .float-right{
+            .addbtn{
+                position: absolute;
+                top: 15px;
+                right: 0;
+                border: 1px solid #999;
+                color: #333;
+                font-weight: 200;
+                background-color: transparent;
+                border-radius: 0px;
+                padding: 8px 30px;
+            }
+        }
+    }
+    .details{
+       background: none;
+       border: none;
+       color:$primary-color;
+       text-transform: uppercase;
+       outline: none;
+       margin-bottom: 8px;
+    font-size: 15px;
+    }
+    .description-body{
+        padding: 4px;
+        font-size: 0.9375em;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 20px;
+        th, td {
+            padding: 8px 6px;
+            text-align: left;
+           border: 1px solid #e8e9eb;
+        }
+    }
+}
+.owl-dots{
+    bottom: 0px !important;
+}
+
+@media only screen and (max-width: 940px){
+    .form-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -1,6 +1,11 @@
+// @font-face{
+//     font-family: "gillsans light" ,sans-serif;
+//     src: url('../fonts/gillsans-light.woff') format("woff");
+// }
 @font-face{
-    font-family: "gillsans light" ,sans-serif;
-    src: url('../fonts/gillsans-light.woff') format("woff");
+    font-family: "gillsans" ,sans-serif;
+    font-display: auto;
+    src: local( 'gillsans' ), url(../fonts/gillsansmt.woff) format('woff');
 }
 @font-face{
     font-family: "Futura Book", sans-serif;
@@ -14,3 +19,8 @@
     font-family: "symbola" ,sans-serif;
     src: url('../fonts/Symbola.woff') format("woff");
 }
+// @font-face {
+//     font-family: 'Avenir Black' ;
+//     font-display: auto;
+//    src: local( 'Avenir Black' ), url(assets/fonts/AvenirLTStd-Black.otf) format('otf');
+// }

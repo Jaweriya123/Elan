@@ -39,9 +39,9 @@ toggle(){
 openlevel(){
   this.openlevel1 = !this.openlevel1;
 }
-// openleveltwo(){
-//   this.openlevel2 = !this.openlevel2;
-// }
+openleveltwo(){
+  this.openlevel2 = !this.openlevel2;
+}
 // onSelectedCompany(company: string) {  
 //   this.company = company;
 // }

@@ -1,52 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@font-face{
-    font-family: "gillsans" ,sans-serif;
-    src: url(./assets/fonts/gillsans-light.woff);
-}
-@font-face{
-    font-family: "Futura Book", sans-serif;
-    src: url(assets/fonts/futuralt-book.woff);
-}
-@font-face{
-    font-family: "gillsans" ,sans-serif;
-    src: url(assets/fonts/gillsansmt.woff);
-}
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    padding: 0;
-  
-}
- input, textarea, button, select {
-    font-size: 16px;
-    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif; 
-    color: #000;
-    line-height: 1.5;
-}
-.main-header{
-a{
-    font-family: "gillsans" ,sans-serif;
-}
-}
-.owl-carousel{
-    position: relative;
-    .owl-dots{
-        position: absolute;
-        bottom: 3%;
-        left: 49%;
-    button{
-        width: 8px;
-    height: 8px;
-    background: transparent;
-    border: 1px solid #333;
-    opacity: 1;
-    border-radius: 15px;
-    margin: 0 2px;
-    &.active{
-        background: #333 !important;
-    }
-}
-    }
-}
+@import './assets/css/sass/abstracts/variables';
+@import './assets/css/sass/abstracts/mixins';
+
+@import './assets/css/sass/layout/header';
+
+@import './assets/css/sass/layout/banner';
+@import './assets/css/sass/layout/footer';
+@import './assets/css/sass/layout/sidemenu';
+
+@import './assets/css/sass/pages/home';
+@import './assets/css/sass/pages/mob-home';
+@import './assets/css/sass/pages/collection';
+@import './assets/css/sass/pages/product-page';

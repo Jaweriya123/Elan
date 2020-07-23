@@ -1,0 +1,20 @@
+ .owl-carousel{
+    position: relative;
+    .owl-dots{
+        position: absolute;
+        bottom: 3%;
+        left: 49%;
+    button{
+        width: 8px;
+    height: 8px;
+    background: transparent;
+    border: 1px solid #333;
+    opacity: 1;
+    border-radius: 15px;
+    margin: 0 2px;
+    &.active{
+        background: #333 !important;
+    }
+ }
+    }
+}

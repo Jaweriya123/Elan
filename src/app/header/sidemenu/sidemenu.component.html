@@ -1,9 +1,7 @@
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <!-- <a href="javascript:void(0)" class="closebtn" (click)="navbaropen()">&times;</a> -->
-  <!-- <div id="mySidenav" class="" [ngClass]="{sidenav: opennavbar}"> -->
-
-  <div class="sidebar-content" id="accordion">
+<div id="mySidenav" class="sidenav d-sm-none">
+  <a href="javascript:void(0)" class="sidenav__closebtn" onclick="closeNav()">&times;</a>
+<!--sidebar content-->
+  <div class="sidenav__content" id="accordion">
     <div class="sidebar-dropdown" id="dropdown1">
       <button class="dropdown-btn collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
         aria-controls="collapse1 "  routerLink="/collections"> Élan Unstitched</button>
@@ -73,16 +71,15 @@
     <div class="sidebar-dropdown">
       <button class="dropdown-btn contact-us " type="button">contact Us</button>
     </div>
+
     <div class="sidebar-dropdown">
       <button class="dropdown-btn subscribe " type="button">subscribe </button>
     </div>
   </div>
-
+<!---sidebar bottom-->
   <div class="sidebar-bottom">
-
-    <div class="header-search">
-
-      <form id="sidebar-search">
+    <div class="sidebar-bottom__header-search">
+      <form class="sidebar-bottom__sidebar-search">
         <a href="#" (click)="showsearch()">
           <svg id="search" viewBox="0 0 20 20" class="icon icon-glass" height="100%">
             <path
@@ -93,6 +90,7 @@
         <input type="search" class="search-input" [ngClass]="{show: shouldShow}" autofocus>
       </form>
     </div>
-    <a href="#" class="account-link">Login</a>
+
+    <a href="#" class="sidebar-bottom__account-link">Login</a>
   </div>
 </div>

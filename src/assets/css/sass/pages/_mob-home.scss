@@ -1,0 +1,38 @@
+.page-width{
+    padding:0 10px;
+}
+.mobile-home{
+    &__shopify-section{
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .heading{
+            text-align: center;
+            margin: 12px;
+            a{
+                color:$primary-color;
+        
+            h2{
+                font-size: 1.25em;
+                font-weight: 200;
+                letter-spacing: 1px;
+                font-family: "Times new roman";
+                text-transform: uppercase;
+                margin: 0;
+            }
+        }
+            p{
+            margin: 0 0 5px;
+            color: $primary-color;
+            font-family: "gillsans",sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 200;
+            }
+        }
+     }
+}
+
+

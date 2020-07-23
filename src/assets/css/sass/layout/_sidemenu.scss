@@ -1,0 +1,101 @@
+
+.sidenav {
+    display: block;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 0;
+    background-color:$sidenav-background !important;
+    overflow: hidden;
+    padding: 62px 0px 11px 0px;
+    overflow-y: auto;
+    transition: all 0.45s cubic-bezier(0.29, 0.63, 0.44, 1);
+        &__closebtn{
+            float: right;
+            position: absolute;
+            top: -2px;
+            right: 10px;
+            font-size: 30px;
+            color: gray;
+            text-decoration: none;
+        }
+  
+   .sidebar-dropdown{
+       .dropdown-btn {
+        text-decoration: none;
+        font-size: 14px;
+        // display: block;
+        width: 100%;
+        background: none;
+        border:none;
+        color: $primary-color;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: left;     
+        margin-bottom: 9px;
+        font-family: $primary-font;
+        padding: 15px 30px;
+         margin: 0;
+        }
+        .contact-us , .subscribe{
+            outline: none;
+        }
+    
+        .dropdown-container{
+            list-style: none;
+            padding-left: 47px;
+            li{
+                position: relative;
+                margin-bottom: 10px;
+               
+                a{
+                @include a_style();
+                font-size: 14px !important;
+                 color:$primary-color;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .sidebar-bottom{
+        padding: 10px 30px;
+        display: flex;
+        &__header-search{
+            display: flex;
+            position: relative;
+        }
+        &__account-link{
+        position: absolute;
+         right: 22px;
+         font-size: 10px;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+         color:$primary-color !important;
+        }
+    
+    &__sidebar-search input[type=search] {
+        display: none;
+    }
+  
+    &__sidebar-search  .show{
+        display:inline-block !important;
+        width: 160px;
+        color: $primary-color;
+        background-color:transparent;
+        cursor: auto;
+        transition: all .5s;
+        padding-left: 10px;
+    }
+    .icon{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        color:$primary-color;
+    }
+
+}
+}

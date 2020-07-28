@@ -1,3 +1,5 @@
+
+<ng-template #default_tempalte>
 <div id="mySidenav" class="sidenav d-sm-none">
   <a href="javascript:void(0)" class="sidenav__closebtn" onclick="closeNav()">&times;</a>
 <!--sidebar content-->
@@ -94,3 +96,200 @@
     <a href="#" class="sidebar-bottom__account-link">Login</a>
   </div>
 </div>
+</ng-template>
+<!-- 2nd template -->
+<ng-template #navigation_template>
+  <div id="mySidenav" class="side-navigation menu d-sm-none ">
+    <a href="javascript:void(0)" class="side-navigation__closebtn" onclick="closeNav()">
+        <svg class="icon-close" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+            style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <g>
+                <g>
+                    <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512 
+                    512,452.922 315.076,256"></polygon>
+                </g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+        </svg>
+    </a>
+    <nav>
+        <ul class="side-navigation__content">
+            <li class="dropdown-item">
+                <a href="#">
+                    <span>Élan Unstitched</span>
+                    <span class="dropdown-item__icon" onclick="opendrop()"><i class="fa fa-angle-right"
+                            aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span> Élan Vital</span>
+                    <span class="dropdown-item__icon" onclick="opendrop2()"><i class="fa fa-angle-right"
+                            aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span>Prêt-à-Porter</span>
+                    <span class="dropdown-item__icon"  onclick="opendrop3()"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span>Wedding &amp; Luxury Couture</span>
+                    <span class="dropdown-item__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span> Studio</span>
+                    <span class="dropdown-item__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span> Campaigns</span>
+                    <span class="dropdown-item__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span> lookbooks</span>
+                    <span class="dropdown-item__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span> contact Us</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="mydrop" class="openmenu2">
+        <div class="title">
+            <span class="title__icon" onclick="closedrop()">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </span>
+            <span>Élan Unstitched</span>
+        </div>
+        <ul class="side-navigation__content">
+            <li class="dropdown-item">
+                <a href="#">
+                    <span>Lawn</span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span> Villette</span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span>Tresor</span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span>Tissue De Luxe</span>
+                </a>
+            </li>
+            <div class="container" style="text-align: center;">
+                <img src="../../assets/images/mobile-bnner.jpg" class="sideimg">
+                <p>Capsule collections you won’t find elsewhere</p>
+                <button class="shop_now">shop now </button>
+            </div>
+
+        </ul>
+    </div>
+
+    <div id="mydrop2" class="openmenu2">
+        <div class="title">
+            <span class="title__icon" onclick="closedrop2()">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </span>
+            <span>Élan Vital</span>
+        </div>
+        <ul class="side-navigation__content">
+            <li class="dropdown-item">
+                <a href="#">
+                    <span>Vital</span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span> Indigene</span>
+                </a>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">
+                    <span>Essentials</span>
+                </a>
+            </li>
+            <div class="container" style="text-align: center;">
+                <img src="../../assets/images/mslider.webp" class="sideimg" width="100%;">
+                <p>Our trendy daywear line</p>
+                <button class="shop_now">shop now </button>
+            </div>
+
+        </ul>
+    </div>
+    <div id="mydrop3" class="openmenu2">
+      <div class="title">
+          <span class="title__icon" onclick="closedrop3()">
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </span>
+          <span>Prêt-à-Porter</span>
+      </div>
+      <ul class="side-navigation__content">
+          <li class="dropdown-item">
+              <a href="#">
+                  <span>Le Grand Amour</span>
+              </a>
+          </li>
+          <li class="dropdown-item">
+              <a href="#">
+                  <span> Claire De Lune</span>
+              </a>
+          </li>
+          <div class="container" style="text-align: center;">
+              <img src="../../assets/images/mb3.webp" class="sideimg" width="100%;">
+              <p >Capsule collections you won’t find elsewhere</p>
+              <button class="shop_now">shop now </button>
+          </div>
+
+      </ul>
+  </div>
+</div>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="navigation_template"></ng-container>

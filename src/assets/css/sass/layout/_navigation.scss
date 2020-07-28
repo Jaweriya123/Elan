@@ -1,0 +1,84 @@
+.side-navigation {
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 0;
+    background-color:transparent;
+    overflow-y: auto;
+    transition: all 0.4s ease;
+
+    &__closebtn{
+        width: 12%;
+        height: 40px;
+        right: 4px;
+        top: 7px;
+        position: absolute;
+        background: $primary-color !important;
+        text-align: center;
+        svg{
+            width: 15px;
+            height: 15px;
+            fill:$secondery-color;
+        }
+    }
+       nav{
+        width: 87%;
+        height: 100%;
+        background-color:$secondery-color;
+        @include side-content-style();
+        }
+    }
+ 
+    .openmenu2{
+        position: absolute;
+        background:$secondery-color;
+        width: 0px ;
+        z-index: 1001;
+        opacity: 0;
+        top: 0;
+        height: auto;
+        overflow-y: auto;
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        // transform: translateX(0);
+        .title{
+            display: block !important;
+            color: $primary-color;
+            font-weight: 600;
+            position: relative;
+            padding: 13px 15px 10px 15px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #dddddd;
+             &__icon{
+                float: left;
+                i{
+                    color: gray;
+                    opacity: .5;
+                    font-size: 18px;
+                   }
+            }
+
+        }
+         @include side-content-style();
+         .shop_now{
+            background-color:$sidebar-button;
+            color: $secondery-color;
+            text-transform: uppercase;
+            outline: none;
+            width: 211px;
+            border: none;
+            font-size: 13px;
+            font-size: 13px;
+            padding: 10px;
+            font-weight: 600;
+         }
+         .sideimg{
+             margin: 20px 0;
+             width:100%;
+         }
+    }

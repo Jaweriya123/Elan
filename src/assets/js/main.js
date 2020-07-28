@@ -81,23 +81,52 @@ $(document).ready(function () {
         }
 
     });
-        $('#produto').zoom();
-        // $('#produto').trigger('zoom.destroy'); 
+        // $('#produto').zoom();
 });
 
+//first template
 
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "80%";
+// }
+// function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+// }
+
+
+//first main nav
 function openNav() {
-    document.getElementById("mySidenav").style.width = "90%";
-    // document.getElementById("mySidenav").style.left = "0px";
-    document.getElementById("body").style.overflow = "hidden";
+    document.getElementById("mySidenav").style.width = "100%";
 }
-
-
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    // document.getElementById("mySidenav").style.left = "-34px";
-    document.getElementById("body").style.overflow = "overlay";
 }
+// 2nd nav
+function opendrop(){   
+    document.getElementById("mydrop").style.width = "87%";
+    document.getElementById("mydrop").style.opacity = "1";  
+}
+function closedrop(){
+    document.getElementById("mydrop").style.width = "0";
+}
+//3rd nav
+function opendrop2(){   
+    document.getElementById("mydrop2").style.width = "87%";
+    document.getElementById("mydrop2").style.opacity = "1";
+}
+function closedrop2(){
+    document.getElementById("mydrop2").style.width = "0";
+}
+
+//4th nav
+function opendrop3(){   
+    document.getElementById("mydrop3").style.width = "87%";
+    document.getElementById("mydrop3").style.opacity = "1";
+}
+function closedrop3(){
+    document.getElementById("mydrop3").style.width = "0";
+}
+
 
 function myFunction(imgs) {
     let thumbnails = document.getElementsByClassName('thumbnail');

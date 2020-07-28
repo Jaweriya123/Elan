@@ -28,3 +28,35 @@
         }
     }
 }
+@mixin side-content-style{
+    .side-navigation__content{
+        padding: 0;
+        .dropdown-item{
+           list-style: none;
+           border-bottom: 1px solid #dddddd;
+           padding-bottom: 9px;
+           padding-right: 2px;
+           padding-top: 9px;
+           background: transparent;
+           a{
+               text-decoration: none;
+               color:$primary-color;
+               font-size: 13px;
+               font-weight: 500;
+               text-transform: uppercase;
+           }
+           &__icon{
+              float: right;
+              font-size: 16px;
+              height: 40px;
+               width: 40px;
+               text-align: center;
+              i{
+               color: gray;
+               opacity: .5;
+               font-size: 18px;
+              }
+           }
+       }
+   }
+}
